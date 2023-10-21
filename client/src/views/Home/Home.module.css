@@ -1,0 +1,11 @@
+.mainContainer {
+	margin: 20px;
+	margin-top: 5px;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	background-color: rgb(191, 220, 245, 0);
+	border-width: 0px;
+
+	height: 640px;
+}

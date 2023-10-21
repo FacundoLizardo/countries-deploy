@@ -1,0 +1,8 @@
+.mainContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: 360px;
+	margin-bottom: 0px;
+	height: 555px;
+}

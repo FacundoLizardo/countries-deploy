@@ -1,0 +1,15 @@
+export const GET_COUNTRIES = "GET_COUNTRIES";
+export const SEARCH_COUNTRIES = "SEARCH_COUNTRIES";
+export const GET_ACTIVITIES = "GET_ACTIVITIES";
+export const SEARCH_COUNTRIES_FORM = "SEARCH_COUNTRIES_FORM";
+export const SET_ACTIVITY = "SET_ACTIVITY";
+export const CLEAR_FORM = "CLEAR_FORM";
+export const FILTER_BY_ACTIVITY = "FILTER_BY_ACTIVITY";
+export const FILTER_BY_CONTINENT = "FILTER_BY_CONTINENT";
+export const ORDER_AZ = "ORDER_AZ";
+export const ORDER_ZA = "ORDER_ZA";
+export const ORDER_MEN_MAY = "ORDER_MEN_MAY";
+export const ORDER_MAY_MEN = "ORDER_MAY_MEN";
+export const RESTORE_BUSCADOS = "RESTORE_BUSCADOS";
+export const CLEAR_HOME = "CLEAR_HOME";
+export const RESET_FORM = "RESET_FORM";

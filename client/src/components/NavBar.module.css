@@ -1,0 +1,95 @@
+.mainContainer {
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: -40px;
+	display: flex;
+	flex-direction: row;
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1),
+		rgba(184, 184, 184, 0)
+	);
+	justify-content: space-evenly;
+	border-width: 0px;
+	padding: 0px;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 100%;
+	text-decoration: none;
+	height: 100px;
+}
+h3 {
+	color: #ffffff;
+	text-decoration-line: none;
+}
+Link {
+	cursor: pointer;
+}
+
+.buttonNavbar {
+	margin: 10px;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	padding: 10px;
+	margin-right: 0px;
+}
+
+.buttonNavbar:hover {
+	transform: scale(0.95);
+	background-color: #ffffff;
+	color: black;
+}
+
+.buttonClearFilters {
+	padding: 2px;
+	margin: 2px;
+	width: 100px;
+}
+
+.buttonClearFilters:hover {
+	transform: scale(0.95);
+}
+
+label {
+	color: #ffffff;
+}
+
+.selectContient {
+	padding: 2px;
+	border: 0px solid #ccc;
+	font-size: 14px;
+	width: 100px;
+	appearance: none;
+	transition: ease-in-out 1s;
+	margin-right: 25px;
+	margin-left: 5px;
+	background-color: rgba(255, 255, 255);
+}
+
+.selectActivity {
+	padding: 2px;
+	font-size: 14px;
+	width: 100px;
+	appearance: none;
+	transition: ease-in-out 1s;
+}
+
+.order {
+	padding: 2px;
+	font-size: 14px;
+	width: 100px;
+	appearance: none;
+	transition: ease-in-out 1s;
+	margin-right: 25px;
+	background-color: rgba(255, 255, 255);
+}
+
+.orderLabel {
+	opacity: inherit;
+	margin-right: 10px;
+}

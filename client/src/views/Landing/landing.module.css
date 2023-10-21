@@ -1,0 +1,39 @@
+.mainContainer {
+	background-color: rgb(240, 248, 255, 0.1);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-decoration: none;
+	padding: 60px;
+	overflow: hidden;
+}
+
+.boton {
+	background-color: rgb(0, 0, 0, 0.5);
+	border-radius: 3px;
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+	border: none;
+	font-size: 50px;
+	color: aliceblue;
+	padding: 40px;
+	transition: ease-in-out 0.1s;
+}
+.boton:hover {
+	transform: scale(0.95);
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+.p {
+	padding: 50px;
+	border-radius: 3px;
+	background-color: rgb(0, 0, 0, 0.5);
+	margin-top: 150px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	font-size: 30px;
+}

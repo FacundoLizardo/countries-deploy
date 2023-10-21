@@ -1,0 +1,52 @@
+.mainContainer {
+	border-radius: 15px;
+	max-width: 60vw;
+	margin: auto;
+	padding: 0px;
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-around;
+	font-family: Arial, Helvetica, sans-serif;
+	align-items: center;
+}
+
+.buttonPages {
+	padding: 0px;
+	background-color: rgb(0, 0, 0, 0);
+	color: #ffffff;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	margin: 0px;
+	margin-top: -40px;
+	border-width: 0px;
+	height: 30px;
+}
+
+.buttonPages:active {
+	transform: scale(0.9);
+	color: #7e7e7e;
+}
+
+.parrafoPaginacion {
+	background-color: rgb(255, 255, 255, 0.5);
+	border-style: solid;
+	border-radius: 1px;
+	border-color: black;
+	border-width: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 2px;
+	padding-top: 7px;
+	height: 25px;
+	width: 150px;
+	text-align: center;
+}
+
+.inputPage {
+	width: 50px;
+	height: 40px;
+	padding: 0px;
+	justify-content: center;
+	align-items: center;
+	margin-left: -100px;
+}

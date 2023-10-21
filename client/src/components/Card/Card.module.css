@@ -1,0 +1,90 @@
+.mainContainer {
+	border-style: solid;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 15px;
+	padding: 10px;
+	text-align: center;
+	font-size: 1px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.containerHome {
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	border-radius: 5px;
+
+	background-color: rgb(189, 189, 189, 0.5);
+	margin: 15px;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 4px;
+	text-align: center;
+	text-size-adjust: initial;
+	width: 200px;
+	height: 220px;
+	font-size: 70%;
+	box-shadow: 5px 5px 8px rgba(121, 121, 121, 0.2);
+}
+
+.containerForm {
+	border-style: solid;
+	border-radius: 3px;
+	border-width: 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: aliceblue;
+	margin: 2px;
+	padding: 0px;
+	padding-top: 10px;
+	text-align: center;
+	height: 90px;
+	width: 110px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+	align-items: center;
+	border-radius: 3px;
+	max-height: 100px;
+	max-width: 100%;
+	width: auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding: 0px;
+	margin: 0px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	transition: transform 0.2s ease;
+}
+
+.image:hover {
+	transform: scale(0.95);
+}
+
+.imageF {
+	justify-content: baseline;
+	border-radius: 3px;
+	padding-top: 0px;
+	max-height: 30px;
+	width: auto;
+	border-width: 0px;
+	border-style: solid;
+	border-color: black;
+	margin: 0px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nombre {
+	font-size: 24px;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.nombreF {
+	margin-top: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
