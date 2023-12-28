@@ -70,92 +70,106 @@ const Formulario = () => {
 
 	return (
 		<div className={style.mainContainer}>
-			<p className={style.parrafo}>
-				En este formulario podras agregar una actividad a tantos paises como
-				quieras
-			</p>
-			<form onSubmit={onSubmit}>
-				<label htmlFor="Activity" className={style.label}>
-					Escribe el nombre de la actividad
-				</label>
-				<input
-					placeholder="Activity"
-					id="Activity"
-					name="nombre"
-					onChange={handleChange}
-					className={style.input}
-				/>
-
-				<label htmlFor="Dificultad" className={style.label}>
-					Ingresa la dificultad de la actividad
-				</label>
-				<select
-					id="Dificultad"
-					name="dificultad"
-					onChange={handleChange}
-					className={style.customselect}
-				>
-					<option>Select</option>
-					<option value={1}>1</option>
-					<option value={2}>2</option>
-					<option value={3}>3</option>
-					<option value={4}>4</option>
-					<option value={5}>5</option>
-				</select>
-
-				<label htmlFor="Duracion" className={style.label}>
-					Escribe la duracion de la actividad, no puede superar un maximo de 100
-					horas
-				</label>
-				<input
-					placeholder="Duración"
-					id="duracion"
-					name="duracion"
-					onChange={handleChange}
-					className={style.input}
-				/>
-
-				<label htmlFor="Temporada" className={style.label}>
-					Ingresa la epoca del año en que se puede realizar esta actividad
-				</label>
-				<select
-					id="Temporada"
-					name="temporada"
-					onChange={handleChange}
-					className={style.customselect}
-				>
-					<option>Select</option>
-					<option value={"Verano"}>Verano</option>
-					<option value={"Invierno"}>Invierno</option>
-					<option value={"Primavera"}>Primavera</option>
-					<option value={"Otoño"}>Otoño</option>
-				</select>
-
-				<div className={style.search}>
-					<label htmlFor="paises" className={style.labelForm}>
-						Selecciona el/los paises en los que se puede realizar esta actividad
-					</label>
-					<SearchBar />
-
-					<div className={style.searchCountries}>
-						{countriesForm.map((country) => {
-							return (
-								<Card
-									id={country.id}
-									key={country.nombre}
-									nombre={country.nombre}
-									bandera={country.bandera}
-									continente={country.continente}
-								/>
-							);
-						})}
+			<div>
+				<p className={style.parrafo}>
+					En este formulario podras agregar una actividad a tantos paises como
+					quieras
+				</p>
+			</div>
+			<div className={style.form}>
+				<form onSubmit={onSubmit}>
+					<div className={style.formDiv}>
+						{" "}
+						<label htmlFor="Activity">Escribe el nombre de la actividad</label>
+						<input
+							placeholder="Activity"
+							id="Activity"
+							name="nombre"
+							onChange={handleChange}
+							className={style.input}
+						/>
 					</div>
-				</div>
 
-				<button type="submit" className={style.buttonSubmit}>
-					Submit
-				</button>
-			</form>
+					<div className={style.formDiv}>
+						{" "}
+						<label htmlFor="Dificultad">
+							Ingresa la dificultad de la actividad
+						</label>
+						<select
+							id="Dificultad"
+							name="dificultad"
+							onChange={handleChange}
+							className={style.customselect}
+						>
+							<option>Select</option>
+							<option value={1}>1</option>
+							<option value={2}>2</option>
+							<option value={3}>3</option>
+							<option value={4}>4</option>
+							<option value={5}>5</option>
+						</select>
+					</div>
+					<div className={style.formDiv}>
+						<label htmlFor="Duracion">
+							Escribe la duracion de la actividad, no puede superar un maximo de
+							100 horas
+						</label>
+						<input
+							placeholder="Duración"
+							id="duracion"
+							name="duracion"
+							onChange={handleChange}
+							className={style.input}
+						/>
+					</div>
+
+					<div className={style.formDiv}>
+						{" "}
+						<label htmlFor="Temporada">
+							Ingresa la epoca del año en que se puede realizar esta actividad
+						</label>
+						<select
+							id="Temporada"
+							name="temporada"
+							onChange={handleChange}
+							className={style.customselect}
+						>
+							<option>Select</option>
+							<option value={"Verano"}>Verano</option>
+							<option value={"Invierno"}>Invierno</option>
+							<option value={"Primavera"}>Primavera</option>
+							<option value={"Otoño"}>Otoño</option>
+						</select>
+					</div>
+
+					<div className={style.search}>
+						<label htmlFor="paises">
+							Selecciona el/los paises en los que se puede realizar esta
+							actividad
+						</label>
+						<SearchBar />
+						<div className={style.searchAndButton}>
+							{" "}
+							<div className={style.cardsContainer}>
+								{countriesForm.map((country) => {
+									return (
+										<Card
+											id={country.id}
+											key={country.nombre}
+											nombre={country.nombre}
+											bandera={country.bandera}
+											continente={country.continente}
+										/>
+									);
+								})}
+							</div>
+							<button type="submit" className={style.buttonSubmit}>
+								Submit
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	);
 };

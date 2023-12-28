@@ -13,7 +13,6 @@ const Card = (props) => {
 		<div>
 			{location.pathname === "/home" && (
 				<div className={style.containerHome}>
-					{/* <button onClick={onClose}>x</button> */}
 					<h2 className={style.nombre}>{nombre}</h2>
 					<h2>{continente}</h2>
 					<Link to={`/detail/${id}`}>

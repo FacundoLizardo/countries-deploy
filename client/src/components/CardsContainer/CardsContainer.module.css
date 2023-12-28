@@ -1,8 +1,10 @@
-.mainContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	height: 360px;
-	margin-bottom: 0px;
-	height: 555px;
+.cardsContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+	gap: 10px;
+	max-height: 90%;
+
+	width: 90%;
+	margin: 0px;
+	padding: 0px;
 }

@@ -7,7 +7,7 @@ import { useState } from "react";
 const Home = ({ page, setPage }) => {
 	const buscados = useSelector((state) => state.buscados);
 
-	const [perPage, setPerPage] = useState(10);
+	const [perPage, setPerPage] = useState(16);
 	const countries = useSelector((state) => state.countries);
 
 	let cantidadDePaginas = 1;
@@ -16,7 +16,7 @@ const Home = ({ page, setPage }) => {
 		cantidadDePaginas = Math.ceil(countries.length / perPage);
 	}
 
-	if (buscados.length > 10) {
+	if (buscados.length > 16) {
 		cantidadDePaginas = Math.ceil(buscados.length / perPage);
 	}
 
@@ -31,7 +31,7 @@ const Home = ({ page, setPage }) => {
 	);
 
 	return (
-		<div className={style.mainContainer}>
+		<div className={style.homeContainer}>
 			{buscados.length >= 1 && <CardsContainer buscados={render} />}
 			{buscados.length === 0 && <CardsContainer buscados={renderCountries} />}
 			<Paginacion

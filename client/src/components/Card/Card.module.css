@@ -5,26 +5,29 @@
 	margin: 15px;
 	padding: 10px;
 	text-align: center;
-	font-size: 1px;
+	justify-content: center;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	text-overflow: ellipsis;
 }
 
 .containerHome {
 	font-family: Arial, Helvetica, sans-serif;
 	color: aliceblue;
 	border-radius: 5px;
-
 	background-color: rgb(189, 189, 189, 0.5);
-	margin: 15px;
-	padding: 10px;
-	padding-bottom: 15px;
-	padding-top: 4px;
-	text-align: center;
-	text-size-adjust: initial;
 	width: 200px;
 	height: 220px;
 	font-size: 70%;
+	padding: 15px;
 	box-shadow: 5px 5px 8px rgba(121, 121, 121, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	& h2 {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .containerForm {
@@ -33,13 +36,19 @@
 	border-width: 0px;
 	background-color: rgba(0, 0, 0, 0.2);
 	color: aliceblue;
-	margin: 2px;
 	padding: 0px;
 	padding-top: 10px;
 	text-align: center;
-	height: 90px;
+	height: 100px;
 	width: 110px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+	gap: 5px;
 }
 
 .image {
@@ -58,15 +67,15 @@
 }
 
 .image:hover {
-	transform: scale(0.95);
+	transform: scale(1.05);
 }
 
 .imageF {
 	justify-content: baseline;
 	border-radius: 3px;
 	padding-top: 0px;
-	max-height: 30px;
-	width: auto;
+	max-height: 50px;
+	width: 80%;
 	border-width: 0px;
 	border-style: solid;
 	border-color: black;
@@ -83,8 +92,6 @@
 }
 
 .nombreF {
-	margin-top: 0px;
-	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }

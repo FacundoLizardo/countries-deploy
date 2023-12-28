@@ -3,7 +3,7 @@ import style from "./CardsContainer.module.css";
 
 const CardsContainer = ({ buscados }) => {
 	return (
-		<div className={style.mainContainer}>
+		<div className={style.cardsContainer}>
 			{buscados.map((country) => {
 				return (
 					<Card

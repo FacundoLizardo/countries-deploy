@@ -1,12 +1,9 @@
 .mainContainer {
-	border-radius: 15px;
+	width: 70%;
 	max-width: 60vw;
-	margin: auto;
 	padding: 0px;
-	margin-top: 5px;
 	display: flex;
 	justify-content: space-around;
-	font-family: Arial, Helvetica, sans-serif;
 	align-items: center;
 }
 
@@ -17,7 +14,7 @@
 	cursor: pointer;
 	transition: transform 0.2s ease;
 	margin: 0px;
-	margin-top: -40px;
+
 	border-width: 0px;
 	height: 30px;
 }
@@ -25,20 +22,19 @@
 .buttonPages:active {
 	transform: scale(0.9);
 	color: #7e7e7e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .parrafoPaginacion {
 	background-color: rgb(255, 255, 255, 0.5);
-	border-style: solid;
-	border-radius: 1px;
-	border-color: black;
+	border: solid 3px black;
+	border-radius: 3px;
 	border-width: 2px;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding: 2px;
-	padding-top: 7px;
-	height: 25px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
 	text-align: center;
 }
 

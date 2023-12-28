@@ -6,9 +6,6 @@ import axios from "axios";
 import { getCountries } from "./redux/actions";
 import style from "./App.module.css";
 
-axios.defaults.baseURL =
-	"https://countries-deploy-production-4492.up.railway.app";
-
 function App() {
 	const dispatch = useDispatch();
 	const [countries, setCountries] = useState([]);
