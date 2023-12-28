@@ -22,7 +22,6 @@ Link {
 }
 
 .buttonNavbar {
-	margin: 10px;
 	cursor: pointer;
 	transition: transform 0.2s ease;
 	border-radius: 5px;

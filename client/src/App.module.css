@@ -1,18 +1,29 @@
 .App {
-	background-image: url("./imagen/400645.jpg");
-	opacity: 0.95;
-	height: 100dvh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed; /* Opcional: para que la imagen permanezca fija al hacer scroll */
-	background-position: center center;
+	position: relative;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+
 	align-items: center;
 	text-decoration: none;
 	overflow: hidden;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.App::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url("./imagen/400645.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* Opcional: para que la imagen permanezca fija al hacer scroll */
+	background-position: center center;
+	opacity: 0.5; /* Ajusta este valor para cambiar la opacidad (0 es transparente, 1 es opaco) */
+	z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
 
 /* Reset styles */
