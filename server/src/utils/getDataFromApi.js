@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { URL } = process.env;
+const URL = process.env;
 const dataFromApi = async () => {
 	const { data } = await axios.get(`${URL}/countries`);
 
