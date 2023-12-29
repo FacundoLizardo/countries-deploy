@@ -4,11 +4,14 @@ const PORT = 3001;
 const sendDataToDb = require("./src/controllers/pushDataToDB");
 
 conn
-	.sync({ force: true })
+	.sync()
+	.then(() => {
+		console.log("Database connected successfully");
+	})
+	.then(() => sendDataToDb())
 	.then(() => {
 		server.listen(PORT, () => {
 			console.log(`Server listening on port ${PORT}`);
-			sendDataToDb();
 		});
 	})
-	.catch((error) => console.error(error));
+	.catch((error) => console.error("Error during initialization:", error));
