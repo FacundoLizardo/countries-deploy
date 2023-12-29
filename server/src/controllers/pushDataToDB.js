@@ -7,7 +7,7 @@ const sendDataToDb = async () => {
 
 		await Country.bulkCreate(countries);
 	} catch (error) {
-		throw new Error(error.message);
+		throw new Error({ error: error.message });
 	}
 };
 
