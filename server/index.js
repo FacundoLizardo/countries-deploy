@@ -1,6 +1,6 @@
 const server = require("./src/server");
 const { conn } = require("./src/db.js");
-const PORT = 3001;
+const PORT = process.env;
 const sendDataToDb = require("./src/controllers/pushDataToDB");
 
 conn
