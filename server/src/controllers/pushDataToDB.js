@@ -1,4 +1,3 @@
-const dataFromApi = require("../utils/getDataFromApi");
 const { Country } = require("../db");
 const data = require("../../api/data");
 
