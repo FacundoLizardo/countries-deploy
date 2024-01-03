@@ -3,7 +3,6 @@ const { Country } = require("../db");
 const data = require("../../api/data");
 
 const sendDataToDb = async () => {
-	//const countries = await dataFromApi();
 	const countries = data.map((country) => ({
 		id: country.cca3,
 		nombre: country.name.common,

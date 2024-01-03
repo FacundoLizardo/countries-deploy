@@ -2,7 +2,6 @@ const axios = require("axios");
 const URL = process.env;
 const dataFromApi = async () => {
 	const { data } = await axios.get(`http://localhost:5000/countries`);
-	//const { data } = await axios.get(`${URL}/countries`);
 
 	const countries = data.map((country) => ({
 		id: country.cca3,
