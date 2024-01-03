@@ -2,7 +2,7 @@ const dataFromApi = require("../utils/getDataFromApi");
 const { Country } = require("../db");
 
 const sendDataToDb = async () => {
-	const countries = {
+	const data = {
 		countries: [
 			{
 				name: {
@@ -44139,6 +44139,16 @@ const sendDataToDb = async () => {
 			},
 		],
 	};
+	const countries = data.map((country) => ({
+		id: country.cca3,
+		nombre: country.name.common,
+		bandera: country.flags.png,
+		continente: country.continents[0],
+		capital: country.capital ? country.capital[0] : "Desconocido",
+		subregion: country.subregion ? country.subregion[0] : "Desconocido",
+		area: country.area,
+		poblacion: country.population,
+	}));
 
 	try {
 		await Country.bulkCreate(countries);
